@@ -60,12 +60,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function updateActiveNav() {
     let current = '';
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop - 200;
-      if (window.scrollY >= sectionTop) {
-        current = section.getAttribute('id');
-      }
-    });
+    const scrollY = window.scrollY;
+    const windowH = window.innerHeight;
+    const docH = document.documentElement.scrollHeight;
+
+    // If near the bottom of page (within 200px), force-activate the last section (contact)
+    if (scrollY + windowH >= docH - 200) {
+      current = sections[sections.length - 1].getAttribute('id');
+    } else {
+      // Check each section; use a proportion-based approach
+      sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        // Section is active when its top enters the upper 40% of the viewport
+        if (rect.top <= windowH * 0.4) {
+          current = section.getAttribute('id');
+        }
+      });
+    }
 
     navLinks.forEach(link => {
       link.classList.remove('active');
@@ -95,18 +106,26 @@ document.addEventListener('DOMContentLoaded', () => {
   // ─── MOBILE MENU ───
   const mobileToggle = document.getElementById('mobileMenuToggle');
   const floatingNav = document.getElementById('floatingNav');
+  const navOverlay = document.getElementById('mobileNavOverlay');
 
   function closeMobileMenu() {
     mobileToggle.classList.remove('active');
     floatingNav.classList.remove('mobile-open');
+    if (navOverlay) navOverlay.classList.remove('active');
     document.body.style.overflow = '';
   }
 
   mobileToggle.addEventListener('click', () => {
     const isOpen = mobileToggle.classList.toggle('active');
     floatingNav.classList.toggle('mobile-open');
+    if (navOverlay) navOverlay.classList.toggle('active');
     document.body.style.overflow = isOpen ? 'hidden' : '';
   });
+
+  // Close on overlay click
+  if (navOverlay) {
+    navOverlay.addEventListener('click', closeMobileMenu);
+  }
 
   // Close on clicking outside
   document.addEventListener('click', (e) => {
