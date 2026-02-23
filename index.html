@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prince Deepak Siddharth — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ═══════════════════ CURSOR GLOW ═══════════════════ -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ═══════════════════ FLOATING NAV ═══════════════════ -->
+  <nav class="floating-nav" id="floatingNav">
+    <div class="nav-brand">
+      <span class="brand-letter">P</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#hero" class="nav-link active" data-section="hero">
+        <span class="nav-dot"></span><span class="nav-label">Home</span>
+      </a></li>
+      <li><a href="#experience" class="nav-link" data-section="experience">
+        <span class="nav-dot"></span><span class="nav-label">Experience</span>
+      </a></li>
+      <li><a href="#achievements" class="nav-link" data-section="achievements">
+        <span class="nav-dot"></span><span class="nav-label">Achievements</span>
+      </a></li>
+      <li><a href="#techstack" class="nav-link" data-section="techstack">
+        <span class="nav-dot"></span><span class="nav-label">Stack</span>
+      </a></li>
+      <li><a href="#projects" class="nav-link" data-section="projects">
+        <span class="nav-dot"></span><span class="nav-label">Work</span>
+      </a></li>
+      <li><a href="#blog" class="nav-link" data-section="blog">
+        <span class="nav-dot"></span><span class="nav-label">Blog</span>
+      </a></li>
+      <li><a href="#contact" class="nav-link" data-section="contact">
+        <span class="nav-dot"></span><span class="nav-label">Contact</span>
+      </a></li>
+    </ul>
+    <div class="nav-socials">
+      <a href="https://github.com/prince-deepak-siddharth" target="_blank" aria-label="GitHub" class="social-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/prince-deepak-siddharth-1b1476288/" target="_blank" aria-label="LinkedIn" class="social-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════ MOBILE MENU TOGGLE ═══════════════════ -->
+  <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
+
+  <!-- ═══════════════════ MAIN CONTENT ═══════════════════ -->
+  <main class="main-content">
+
+    <!-- HERO SECTION -->
+    <section class="section hero-section" id="hero">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <p class="hero-greeting reveal-text">Hello, I'm</p>
+          <h1 class="hero-name reveal-text">
+            <span class="name-line">Prince Deepak</span>
+            <span class="name-line accent">Siddharth</span>
+          </h1>
+          <div class="hero-socials reveal-text">
+            <a href="mailto:personal.princedeepak@gmail.com" class="hero-social-link" aria-label="Gmail">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>Gmail</span>
+            </a>
+            <a href="https://www.linkedin.com/in/prince-deepak-siddharth-1b1476288/" target="_blank" class="hero-social-link" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/prince-deepak-siddharth" target="_blank" class="hero-social-link" aria-label="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://medium.com/@prince31dece" target="_blank" class="hero-social-link" aria-label="Medium">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 3h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M8 7h1l3 5 3-5h1"/><path d="M8 17h8"/><path d="M8 12h8"/></svg>
+              <span>Medium</span>
+            </a>
+            <a href="https://leetcode.com/u/the_conqueror_/" target="_blank" class="hero-social-link" aria-label="LeetCode">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 3l-8 8 8 8"/><path d="M8 11h12"/></svg>
+              <span>LeetCode</span>
+            </a>
+          </div>
+          <p class="hero-title reveal-text">AI/ML Engineer &amp; Full-Stack Developer</p>
+          <p class="hero-description reveal-text">
+            I'm a pre-final year student in the Department of Computer Science &amp; Engineering 
+            at the Indian Institute of Information Technology, Jabalpur.
+          </p>
+          <div class="hero-cta reveal-text">
+            <a href="https://drive.google.com/file/d/1TjkZFUoZv_gB96QTxSGp3et3yhFwA2Uh/view?usp=sharing" target="_blank" class="btn btn-primary">
+              <span>View My Resume</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+            <a href="mailto:personal.princedeepak@gmail.com" class="btn btn-ghost">Get In Touch</a>
+          </div>
+          <div class="hero-status-badge reveal-text">
+            <span class="status-dot"></span>
+            Available for new opportunities
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-photo-wrapper">
+            <div class="hero-photo-ring"></div>
+            <!-- Orbiting Tech Icons -->
+            <div class="orbit-icon" data-orbit><i class="devicon-python-plain colored"></i></div>
+            <div class="orbit-icon" data-orbit><i class="devicon-react-original colored"></i></div>
+            <div class="orbit-icon" data-orbit><i class="devicon-tensorflow-original colored"></i></div>
+            <div class="orbit-icon" data-orbit><i class="devicon-javascript-plain colored"></i></div>
+            <div class="orbit-icon" data-orbit><i class="devicon-docker-plain colored"></i></div>
+            <div class="orbit-icon" data-orbit><i class="devicon-pytorch-original colored"></i></div>
+            <div class="orbit-icon" data-orbit><i class="devicon-git-plain colored"></i></div>
+            <div class="orbit-icon" data-orbit><i class="devicon-tailwindcss-original colored"></i></div>
+            <div class="orbit-icon" data-orbit><i class="devicon-cplusplus-plain colored"></i></div>
+            <div class="hero-photo">
+              <img src="photo.jpeg" alt="Prince Deepak Siddharth" />
+            </div>
+          </div>
+          <div class="hero-shape-dots"></div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section class="section experience-section" id="experience">
+      <div class="section-header">
+        <span class="section-number">01</span>
+        <h2 class="section-title">Experience</h2>
+        <div class="section-line"></div>
+      </div>
+      <p class="section-subtitle">Leadership roles and hands-on experience in AI/ML communities</p>
+
+      <div class="experience-timeline">
+        <!-- Experience 1 -->
+        <div class="exp-card">
+          <div class="exp-timeline-dot"></div>
+          <div class="exp-content glass">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-title">Team Lead — Amazon ML Challenge</h3>
+                <span class="exp-org">Amazon ML Hackathon '25</span>
+              </div>
+              <span class="exp-badge">11 Oct '25 — 13 Oct '25</span>
+            </div>
+            <p class="exp-desc">
+              Led a team in the Amazon ML Challenge, implementing a machine learning solution
+              that achieved an All India Rank of 66 out of 44,000+ participating developers.
+            </p>
+            <div class="exp-tags">
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Team Leadership</span>
+              <span class="tag">Competition</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 2 -->
+        <div class="exp-card">
+          <div class="exp-timeline-dot"></div>
+          <div class="exp-content glass">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-title">AI/ML Lead & Deep Learning Lead</h3>
+                <span class="exp-org">BitByte — The Programming Club &amp; GDG on Campus, IIIT Jabalpur</span>
+              </div>
+              <span class="exp-badge">Jan 2024 — Present</span>
+            </div>
+            <p class="exp-desc">
+              Serving as AI/ML Lead at BitByte — The Programming Club and Deep Learning Lead at 
+              Google Developer Groups (GDG) on Campus. Organizing workshops, hackathons, and 
+              study groups to foster a strong AI/ML community at IIIT Jabalpur.
+            </p>
+            <div class="exp-tags">
+              <span class="tag">AI/ML</span>
+              <span class="tag">Deep Learning</span>
+              <span class="tag">Community Building</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 3 -->
+        <div class="exp-card">
+          <div class="exp-timeline-dot"></div>
+          <div class="exp-content glass">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-title">Lead — Summer of ML '25 &amp; Winter of ML '25</h3>
+                <span class="exp-org">IIIT Jabalpur</span>
+              </div>
+              <span class="exp-badge">May 2025 — Jan 2026</span>
+            </div>
+            <p class="exp-desc">
+              Led and organized both the Summer of ML '25 and Winter of ML '25 programs, 
+              mentoring 500+ junior students in Machine Learning, Deep Learning, Natural Language 
+              Processing, and Generative AI. Designed curriculum, conducted sessions, and provided 
+              hands-on project guidance.
+            </p>
+            <div class="exp-tags">
+              <span class="tag">Mentorship</span>
+              <span class="tag">NLP</span>
+              <span class="tag">Generative AI</span>
+              <span class="tag">Deep Learning</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS SECTION -->
+    <section class="section achievements-section" id="achievements">
+      <div class="section-header">
+        <span class="section-number">02</span>
+        <h2 class="section-title">Achievements</h2>
+        <div class="section-line"></div>
+      </div>
+      <p class="section-subtitle">Recognition and milestones across national-level competitions</p>
+
+      <div class="achievements-timeline">
+        <!-- Achievement 1 -->
+        <div class="ach-card">
+          <div class="ach-timeline-dot trophy"></div>
+          <div class="ach-content glass">
+            <div class="ach-header">
+              <div class="ach-icon-wrap trophy">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+              </div>
+              <div class="ach-info">
+                <h3 class="ach-title">Amazon ML Challenge '25</h3>
+                <span class="ach-org">Amazon · National Level Hackathon</span>
+              </div>
+              <span class="ach-rank-badge gold">AIR 66</span>
+            </div>
+            <p class="ach-desc">
+              Ranked <strong>66th out of 44,000+</strong> developers in one of India's most competitive 
+              machine learning hackathons, building production-grade ML models under tight deadlines.
+            </p>
+            <div class="ach-footer">
+              <div class="ach-tags">
+                <span class="tag">Machine Learning</span>
+                <span class="tag">Competition</span>
+              </div>
+              <span class="ach-meta">44,000+ Participants</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Achievement 2 -->
+        <div class="ach-card">
+          <div class="ach-timeline-dot finalist"></div>
+          <div class="ach-content glass">
+            <div class="ach-header">
+              <div class="ach-icon-wrap finalist">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <div class="ach-info">
+                <h3 class="ach-title">Smart India Hackathon '25</h3>
+                <span class="ach-org">Government of India · National Innovation</span>
+              </div>
+              <span class="ach-rank-badge blue">Finalist</span>
+            </div>
+            <p class="ach-desc">
+              Selected as a <strong>national finalist</strong> in India's largest open innovation hackathon 
+              organized by the Government of India, competing against thousands of teams nationwide.
+            </p>
+            <div class="ach-footer">
+              <div class="ach-tags">
+                <span class="tag">Innovation</span>
+                <span class="tag">Problem Solving</span>
+              </div>
+              <span class="ach-meta">National Finalist</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Achievement 3 -->
+        <div class="ach-card">
+          <div class="ach-timeline-dot semifinalist"></div>
+          <div class="ach-content glass">
+            <div class="ach-header">
+              <div class="ach-icon-wrap semifinalist">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+              </div>
+              <div class="ach-info">
+                <h3 class="ach-title">Flipkart GRiD '25</h3>
+                <span class="ach-org">Flipkart · Flagship Engineering Challenge</span>
+              </div>
+              <span class="ach-rank-badge green">Semi-Finalist</span>
+            </div>
+            <p class="ach-desc">
+              Advanced to the <strong>semi-final round</strong> of Flipkart GRiD, Flipkart's prestigious 
+              flagship engineering campus challenge testing real-world problem-solving skills.
+            </p>
+            <div class="ach-footer">
+              <div class="ach-tags">
+                <span class="tag">Engineering</span>
+                <span class="tag">Campus Challenge</span>
+              </div>
+              <span class="ach-meta">Campus Level</span>
+            </div>
+          </div>
+        </div>
+
+        
+    </section>
+
+    <!-- TECH STACK SECTION -->
+    <section class="section techstack-section" id="techstack">
+      <div class="section-header">
+        <span class="section-number">03</span>
+        <h2 class="section-title">Tech Stack</h2>
+        <div class="section-line"></div>
+      </div>
+      <p class="section-subtitle">Technologies & concepts I leverage to build intelligent systems</p>
+
+      <div class="tech-categories">
+        <!-- Languages -->
+        <div class="tech-group">
+          <h3 class="tech-group-title"><span class="tg-accent"></span>Languages</h3>
+          <div class="tech-group-grid">
+            <div class="tech-card glass" style="--icon-color: #3776AB;">
+              <div class="tech-icon"><i class="devicon-python-plain"></i></div>
+              <span class="tech-name">Python</span>
+            </div>
+            <div class="tech-card glass" style="--icon-color: #A8B9CC;">
+              <div class="tech-icon"><i class="devicon-c-plain"></i></div>
+              <span class="tech-name">C</span>
+            </div>
+            <div class="tech-card glass" style="--icon-color: #00599C;">
+              <div class="tech-icon"><i class="devicon-cplusplus-plain"></i></div>
+              <span class="tech-name">C++</span>
+            </div>
+            <div class="tech-card glass" style="--icon-color: #F7DF1E;">
+              <div class="tech-icon"><i class="devicon-javascript-plain"></i></div>
+              <span class="tech-name">JavaScript</span>
+            </div>
+            <div class="tech-card glass" style="--icon-color: #E34F26;">
+              <div class="tech-icon"><i class="devicon-html5-plain"></i></div>
+              <span class="tech-name">HTML & CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Web & Frameworks -->
+        <div class="tech-group">
+          <h3 class="tech-group-title"><span class="tg-accent"></span>Web & Frameworks</h3>
+          <div class="tech-group-grid">
+            <div class="tech-card glass" style="--icon-color: #61DAFB;">
+              <div class="tech-icon"><i class="devicon-react-original"></i></div>
+              <span class="tech-name">React.js</span>
+            </div>
+            <div class="tech-card glass" style="--icon-color: #06B6D4;">
+              <div class="tech-icon"><i class="devicon-tailwindcss-original"></i></div>
+              <span class="tech-name">Tailwind CSS</span>
+            </div>
+            <div class="tech-card glass" style="--icon-color: #009688;">
+              <div class="tech-icon"><i class="devicon-fastapi-plain"></i></div>
+              <span class="tech-name">FastAPI</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI / ML Frameworks -->
+        <div class="tech-group">
+          <h3 class="tech-group-title"><span class="tg-accent"></span>AI / ML Frameworks</h3>
+          <div class="tech-group-grid">
+            <div class="tech-card glass" style="--icon-color: #F7931E;">
+              <div class="tech-icon"><i class="devicon-scikitlearn-plain"></i></div>
+              <span class="tech-name">Scikit-learn</span>
+            </div>
+            <div class="tech-card glass" style="--icon-color: #FF6F00;">
+              <div class="tech-icon"><i class="devicon-tensorflow-original"></i></div>
+              <span class="tech-name">TensorFlow</span>
+            </div>
+            <div class="tech-card glass" style="--icon-color: #D00000;">
+              <div class="tech-icon"><i class="devicon-keras-plain"></i></div>
+              <span class="tech-name">Keras</span>
+            </div>
+            <div class="tech-card glass" style="--icon-color: #EE4C2C;">
+              <div class="tech-icon"><i class="devicon-pytorch-original"></i></div>
+              <span class="tech-name">PyTorch</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Data Science -->
+        <div class="tech-group">
+          <h3 class="tech-group-title"><span class="tg-accent"></span>Data Science</h3>
+          <div class="tech-group-grid">
+            <div class="tech-card glass" style="--icon-color: #013243;">
+              <div class="tech-icon"><i class="devicon-numpy-plain"></i></div>
+              <span class="tech-name">NumPy</span>
+            </div>
+            <div class="tech-card glass" style="--icon-color: #150458;">
+              <div class="tech-icon"><i class="devicon-pandas-plain"></i></div>
+              <span class="tech-name">Pandas</span>
+            </div>
+            <div class="tech-card glass" style="--icon-color: #11557C;">
+              <div class="tech-icon"><i class="devicon-matplotlib-plain"></i></div>
+              <span class="tech-name">Matplotlib</span>
+            </div>
+            <div class="tech-card glass" style="--icon-color: #4C78A8;">
+              <div class="tech-icon">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="21" x2="21" y2="21"/><path d="M3 20C6 20 8 4 12 4s6 16 9 16"/></svg>
+              </div>
+              <span class="tech-name">Seaborn</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- LLM & Agents -->
+        <div class="tech-group">
+          <h3 class="tech-group-title"><span class="tg-accent"></span>LLM & Agents</h3>
+          <div class="tech-group-grid">
+            <div class="tech-card glass" style="--icon-color: #1C3C3C;">
+              <div class="tech-icon">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+              </div>
+              <span class="tech-name">LangChain</span>
+            </div>
+            <div class="tech-card glass" style="--icon-color: #2D6A4F;">
+              <div class="tech-icon">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><circle cx="5" cy="5" r="2.5"/><circle cx="19" cy="5" r="2.5"/><circle cx="12" cy="19" r="2.5"/><line x1="7" y1="6" x2="17" y2="6"/><line x1="6.5" y1="7" x2="10.5" y2="17"/><line x1="17.5" y1="7" x2="13.5" y2="17"/></svg>
+              </div>
+              <span class="tech-name">LangGraph</span>
+            </div>
+            <div class="tech-card glass" style="--icon-color: #40916C;">
+              <div class="tech-icon">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+              </div>
+              <span class="tech-name">LangSmith</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Concepts & Domains -->
+        <div class="tech-group">
+          <h3 class="tech-group-title"><span class="tg-accent"></span>Concepts & Domains</h3>
+          <div class="concept-pills">
+            <span class="concept-pill">Machine Learning</span>
+            <span class="concept-pill">Deep Learning</span>
+            <span class="concept-pill">Artificial Intelligence</span>
+            <span class="concept-pill">NLP</span>
+            <span class="concept-pill">Generative AI</span>
+            <span class="concept-pill">LLMs</span>
+            <span class="concept-pill">SLMs</span>
+            <span class="concept-pill">Agentic AI</span>
+          </div>
+        </div>
+
+        <!-- Tools & Platforms -->
+        <div class="tech-group">
+          <h3 class="tech-group-title"><span class="tg-accent"></span>Tools & Platforms</h3>
+          <div class="tech-group-grid">
+            <div class="tech-card glass" style="--icon-color: #2496ED;">
+              <div class="tech-icon"><i class="devicon-docker-plain"></i></div>
+              <span class="tech-name">Docker</span>
+            </div>
+            <div class="tech-card glass" style="--icon-color: #FCC624;">
+              <div class="tech-icon"><i class="devicon-linux-plain"></i></div>
+              <span class="tech-name">Linux</span>
+            </div>
+            <div class="tech-card glass" style="--icon-color: #007ACC;">
+              <div class="tech-icon"><i class="devicon-vscode-plain"></i></div>
+              <span class="tech-name">VS Code</span>
+            </div>
+            <div class="tech-card glass" style="--icon-color: #F24E1E;">
+              <div class="tech-icon"><i class="devicon-figma-plain"></i></div>
+              <span class="tech-name">Figma</span>
+            </div>
+            <div class="tech-card glass" style="--icon-color: #F05032;">
+              <div class="tech-icon"><i class="devicon-git-plain"></i></div>
+              <span class="tech-name">Git</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="section-header">
+        <span class="section-number">04</span>
+        <h2 class="section-title">Selected Work</h2>
+        <div class="section-line"></div>
+      </div>
+      <p class="section-subtitle">A curated selection of projects that showcase my skills and passion</p>
+
+      <div class="projects-grid">
+        <!-- Project 1 — UI Project (Screenshot) -->
+        <article class="project-card">
+          <div class="project-preview">
+            <div class="preview-window">
+              <div class="window-chrome">
+                <div class="window-dots">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="window-url">
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                  <span>ASK_IIIT.app</span>
+                </div>
+              </div>
+              <div class="window-content">
+                <!-- Replace src with your screenshot: e.g. project1.png -->
+                <img src="projects/ASK_IIIT.png" alt="Project Screenshot" class="preview-screenshot" />
+              </div>
+            </div>
+            <div class="project-overlay">
+              <a href="https://huggingface.co/spaces/PrinceDeepakSiddharth12/AskIIIT2" class="overlay-btn live-demo" target="_blank">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+                Live Demo
+              </a>
+              <a href="https://github.com/prince-deepak-siddharth/ASK_IIIT" class="overlay-btn github-link" target="_blank">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                Source
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">LangGraph</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Streamlit</span>
+            </div>
+            <h3 class="project-title">ASK IIIT</h3>
+            <p class="project-desc">
+              ASK IIIT is an agentic RAG chatbot built for IIITDM Jabalpur.It uses a multi-node agent with query classification, decomposition, and retrieval to answer college-related questions from ingested PDF documents. The system supports real-time streaming, multi-turn conversation threads, and persistent memory. 
+            </p>
+          </div>
+        </article>
+
+        <!-- Project 2 — ML / Research (Screenshot) -->
+        <article class="project-card">
+          <div class="project-preview">
+            <div class="preview-window">
+              <div class="window-chrome">
+                <div class="window-dots">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="window-url">
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                  <span>github.com/Amazon-ML-Challenge</span>
+                </div>
+              </div>
+              <div class="window-content">
+                <!-- Drop a screenshot: architecture diagram, results chart, paper figure, etc. -->
+                <img src="projects/amazon-ML25.webp" alt="Research Screenshot" class="preview-screenshot" />
+              </div>
+            </div>
+            <div class="project-overlay">
+              <a href="https://github.com/prince-deepak-siddharth/Amazon-ML-Challange" class="overlay-btn github-link" target="_blank">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                Source
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">PyTorch</span>
+              <span class="tag">Transformers</span>
+              <span class="tag">Deep Learning</span>
+            </div>
+            <h3 class="project-title">Smart Product Pricing Engine</h3>
+            <p class="project-desc">
+              A multi-modal deep learning solution for the Amazon ML Challenge 2025 that predicts product prices from catalog text, product images, and numerical features using an ensemble of three transformer-based models (DistilBERT+ViT, RoBERTa+CLIP, DeBERTa+CLIP), evolved iteratively from an XGBoost baseline (55.60% SMAPE) to a final weighted ensemble achieving 43.5961% SMAPE on 75,000 products.
+            </p>
+          </div>
+        </article>
+
+        <!-- Project 3 — UI Project (Screenshot) -->
+        <article class="project-card">
+          <div class="project-preview">
+            <div class="preview-window">
+              <div class="window-chrome">
+                <div class="window-dots">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="window-url">
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                  <span>CP-Rating-Predictor.app</span>
+                </div>
+              </div>
+              <div class="window-content">
+                <!-- Replace src with your screenshot: e.g. project3.png -->
+                <img src="projects/code-rating-predictor.png" alt="Project Screenshot" class="preview-screenshot" />
+              </div>
+            </div>
+            <div class="project-overlay">
+              <a href="https://prince-deepak-siddharth.github.io/Code-Rating-Predictor/" class="overlay-btn live-demo" target="_blank">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+                Live Demo
+              </a>
+              <a href="https://github.com/prince-deepak-siddharth/Code-Rating-Predictor" class="overlay-btn github-link" target="_blank">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                Source
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">Machine Learning</span>
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <h3 class="project-title">CP Rating Predictor</h3>
+            <p class="project-desc">
+              The Code Rating Predictor is a web-based tool that uses machine learning to predict a user's rating on Codeforces based on their CodeChef rating and vice versa. 
+            </p>
+          </div>
+        </article>
+
+        <!-- Project 4 — ML / Research (Screenshot) -->
+        <article class="project-card">
+          <div class="project-preview">
+            <div class="preview-window">
+              <div class="window-chrome">
+                <div class="window-dots">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="window-url">
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                  <span>github.com/research-project</span>
+                </div>
+              </div>
+              <div class="window-content">
+                <!-- Drop a screenshot: architecture diagram, results chart, paper figure, etc. -->
+                <img src="" alt="Research Screenshot" class="preview-screenshot" />
+              </div>
+            </div>
+            <div class="project-overlay">
+              <a href="https://github.com/prince-deepak-siddharth" class="overlay-btn github-link" target="_blank">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                Source
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">TensorFlow</span>
+              <span class="tag">Scikit-learn</span>
+            </div>
+            <h3 class="project-title">Another ML Project</h3>
+            <p class="project-desc">
+              Describe your ML/research project here. Add a screenshot above (diagram, results, etc.).
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- BLOG SECTION -->
+    <section class="section blog-section" id="blog">
+      <div class="section-header">
+        <span class="section-number">05</span>
+        <h2 class="section-title">Blog & Writings</h2>
+        <div class="section-line"></div>
+      </div>
+      <p class="section-subtitle">Thoughts, tutorials, and deep-dives into the topics I'm passionate about</p>
+
+      <div class="blog-list">
+        <!-- Blog 1 -->
+        <a href="https://medium.com/@prince31dece" target="_blank" class="blog-row">
+          <div class="blog-row-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </div>
+          <div class="blog-row-body">
+            <div class="blog-row-meta">
+              <span class="tag">AI / ML</span>
+              <span class="blog-row-date">Coming Soon</span>
+            </div>
+            <h3 class="blog-row-title">Understanding Transformer Architectures from Scratch</h3>
+            <p class="blog-row-desc">A deep dive into attention mechanisms, positional encodings, and how transformers revolutionized NLP and beyond.</p>
+          </div>
+          <div class="blog-row-arrow">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </div>
+        </a>
+
+        <!-- Blog 2 -->
+        <a href="https://medium.com/@prince31dece" target="_blank" class="blog-row">
+          <div class="blog-row-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <div class="blog-row-body">
+            <div class="blog-row-meta">
+              <span class="tag">LLM Agents</span>
+              <span class="blog-row-date">Coming Soon</span>
+            </div>
+            <h3 class="blog-row-title">Building Autonomous AI Agents with LangGraph</h3>
+            <p class="blog-row-desc">How to design, orchestrate, and deploy multi-step reasoning agents using LangGraph's stateful graph framework.</p>
+          </div>
+          <div class="blog-row-arrow">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </div>
+        </a>
+
+        <!-- Blog 3 -->
+        <a href="https://medium.com/@prince31dece" target="_blank" class="blog-row">
+          <div class="blog-row-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div class="blog-row-body">
+            <div class="blog-row-meta">
+              <span class="tag">Full-Stack</span>
+              <span class="blog-row-date">Coming Soon</span>
+            </div>
+            <h3 class="blog-row-title">From Idea to Deployment: Shipping a Full-Stack App</h3>
+            <p class="blog-row-desc">End-to-end walkthrough of building, containerizing, and deploying a production-ready web application.</p>
+          </div>
+          <div class="blog-row-arrow">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </div>
+        </a>
+      </div>
+
+      <div class="blog-footer">
+        <a href="https://medium.com/@prince31dece" target="_blank" class="btn btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42s-3.39-2.88-3.39-6.42 1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42zm2.92 0c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75c.66 0 1.19 2.58 1.19 5.75z"/></svg>
+          <span>Read all on Medium</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="section-header">
+        <span class="section-number">06</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-content">
+        <div class="contact-text">
+          <h3>Let's create something <em class="gold-italic">extraordinary</em> together</h3>
+          <p>
+            I'm always open to discussing new projects, creative ideas, or opportunities 
+            to be part of your vision. Feel free to reach out!
+          </p>
+        </div>
+        <div class="contact-methods">
+          <a href="mailto:personal.princedeepak@gmail.com" class="contact-card glass">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <span class="contact-label">Email</span>
+              <span class="contact-value">personal.princedeepak@gmail.com</span>
+            </div>
+            <svg class="contact-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/prince-deepak-siddharth-1b1476288/" target="_blank" class="contact-card glass">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <div>
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">Connect with me</span>
+            </div>
+            <svg class="contact-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+          <a href="https://github.com/prince-deepak-siddharth" target="_blank" class="contact-card glass">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </div>
+            <div>
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">View my repositories</span>
+            </div>
+            <svg class="contact-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p class="footer-text">
+          Designed & Built with <span class="gold-italic">care</span> by Prince Deepak Siddharth
+        </p>
+        <p class="footer-year">© 2026</p>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
