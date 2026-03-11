@@ -19,7 +19,7 @@ A premium personal portfolio built with pure HTML, CSS, and JavaScript — featu
 
 ## Live
 
-Hosted via GitHub Pages → [prince-deepak-siddharth.github.io/portfolio-website](https://prince-deepak-siddharth.github.io/portfolio-website/)
+Hosted via Vercel → https://prince-deepak-siddharth-portfolio-12.vercel.app/
 
 ## Structure
 
